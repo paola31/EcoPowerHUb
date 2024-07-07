@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha=".75"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginBottom="5dp"
+        android:background="#AECBDAD9"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+
+        <TextView
+            android:id="@+id/EcoPowerHub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/aldrich "
+            android:text="EcoPowerHub"
+            android:textAlignment="center"
+            android:textSize="32dp"
+            />
+
+        <ImageView
+            android:id="@+id/eco"
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#D05F9791"
+            android:src="@drawable/eco"
+            />
+
+        <Button
+            android:id="@+id/conocetuconsumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:backgroundTint="#B2576564"
+            android:fontFamily="@font/aldrich"
+            android:text="CONOCÉ TÚ CONSUMO"
+            />
+
+        <EditText
+            android:id="@+id/nombrecompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-280dp"
+            android:backgroundTint="#837979"
+            android:fontFamily="@font/aldrich"
+            android:hint="   NOMBRE COMPLETO"
+            android:inputType="text"
+            android:textSize="14sp"
+            />
+
+        <EditText
+            android:id="@+id/direccion"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="#837979"
+            android:fontFamily="@font/aldrich"
+            android:hint="   DIRECCION"
+            android:inputType="text"
+            android:textSize="14sp"
+            />
+
+        <EditText
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:ems="10"
+            android:fontFamily="@font/aldrich"
+            android:hint="   CORREO"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
