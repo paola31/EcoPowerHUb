@@ -1,6 +1,10 @@
 package com.example.ecopowerhub;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.ecopowerhub.imprimeInfo;
+
+import android.content.Intent;
 import android.widget.TextView;
 import android.widget.EditText;
 import android.widget.Button;
@@ -41,7 +45,21 @@ public class MainActivity extends AppCompatActivity
 
     private void onClickConsumo(View v)
     {
-        setContentView(R.layout.activity_imprime_info);
+        // Capture the input data
+        String nombreInput = nombre.getText().toString();
+        String direccionInput = direccion.getText().toString();
+        String correoInput = correo.getText().toString();
+
+        // Create an Intent to start the new activity
+        Intent intent = new Intent(MainActivity.this, imprimeInfo.class);
+
+        // Put the captured data into the Intent
+        intent.putExtra("nombredelusuario", nombreInput);
+        intent.putExtra("direccion", direccionInput);
+        intent.putExtra("correo", correoInput);
+
+        // Start the new activity
+        startActivity(intent);
     }
 
 }
